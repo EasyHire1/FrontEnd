@@ -1,0 +1,51 @@
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+
+.layout {
+  min-height: 90vh;
+  @media(min-width: 1500px){
+    padding-right: 40px;
+  }
+}
+
+// List
+.clean-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  & > li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.db {
+  border: 2px solid yellow;
+}
+

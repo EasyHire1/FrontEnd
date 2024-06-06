@@ -1,0 +1,67 @@
+// COLOR PALETTE
+$text-color: #161616; //color for text
+$heading-color: #000000; //color for text that needs to be bold
+$subheading-color: #011e6a; //color for small headers 
+$muted-text-color: #666666; //for small text
+$accent-color: #f0decb; //for accent elements like logo
+
+
+
+$paddings: (
+  small: 2px,
+  medium: 5px,
+  large: 8px,
+  small-t: 2px,
+  small-r: 2px,
+  small-b: 2px,
+  small-l: 2px,
+  medium-t: 5px,
+  medium-r: 5px,
+  medium-b: 5px,
+  medium-l: 5px,
+  large-t: 8px,
+  large-r: 8px,
+  large-b: 8px,
+  large-l: 8px
+);
+
+// Define margin values with directions
+$margins: (
+  small: 2px,
+  medium: 5px,
+  large: 8px,
+  small-t: 2px,
+  small-r: 2px,
+  small-b: 2px,
+  small-l: 2px,
+  medium-t: 5px,
+  medium-r: 5px,
+  medium-b: 5px,
+  medium-l: 5px,
+  large-t: 8px,
+  large-r: 8px,
+  large-b: 8px,
+  large-l: 8px
+);
+
+// Functions to access padding and margin values
+@function get-padding($size, $direction: null) {
+    @if $direction {
+      @return map-get($paddings, #{$size}-#{$direction});
+    }
+    @return map-get($paddings, $size);
+  }
+  
+  @function get-margin($size, $direction: null) {
+    @if $direction {
+      @return map-get($margins, #{$size}-#{$direction});
+    }
+    @return map-get($margins, $size);
+  }
+  
+  // Example usage:
+//   .some-class {
+//     padding: get-padding(small, t) get-padding(small, r) get-padding(medium, b) get-padding(small, l);
+//     margin: get-margin(medium, t) get-margin(medium, r) get-margin(small, b) get-margin(medium, l);
+//   }
+
