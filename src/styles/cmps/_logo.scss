@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+$primary-gradient:linear-gradient(194deg, #3939ab, #1a73e8); // Gradient for the "Easy" part: dark gray to blue
+$highlight-gradient: linear-gradient(90deg, #212121, #ff7043); // Gradient for the "Hire" part: light black to orange
+
+
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    background: $highlight-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    span {
+        background: $primary-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
