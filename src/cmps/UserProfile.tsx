@@ -29,7 +29,7 @@ const UserProfile: React.FC = () => {
           <h4>Preferences</h4>
           <div className="preferences-info">
             <p>Title</p>
-            <p>Full stack developer</p>
+            {/* <p>Full stack developer</p> */}
             <p>Job types</p>
             <p>On site, Hybrid, Remote</p>
           </div>
