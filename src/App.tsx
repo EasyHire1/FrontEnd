@@ -1,8 +1,11 @@
+import Header from "./cmps/Header"
+import './styles/styles.scss';
+
 
 function App() {
 
   return (
-      <div>Hello</div>
+      <Header/>
   )
 }
 
