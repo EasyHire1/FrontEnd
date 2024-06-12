@@ -1,4 +1,6 @@
 import UserProfile from "./cmps/UserProfile";
+import Header from "./cmps/Header";
+import "./styles/styles.scss";
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
       <UserProfile />
     </section>
   );
+  <Header />;
 }
 
 export default App;
