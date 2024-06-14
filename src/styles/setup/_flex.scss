@@ -1,68 +1,26 @@
-// Flexbox Container
-// .flex {
-//   @include flex;
+.flex {
+  display: flex;
 
-//   &.column {
-//     @include flex-direction(column);
-//   }
+  > *.full {
+    flex: 1;
+  }
 
-//   &.row {
-//     @include flex-direction(row);
-//   }
+  &.column {
+    flex-direction: column;
+  }
 
-//   &.justify-center {
-//     @include justify-content(center);
-//   }
+  &.justify-center {
+    justify-content: center;
+  }
 
-//   &.justify-start {
-//     @include justify-content(start);
-//   }
+  &.space-between {
+    justify-content: space-between;
+  }
 
-//   &.justify-end {
-//     @include justify-content(end);
-//   }
-
-//   &.justify-space-between {
-//     @include justify-content(space-between);
-//   }
-
-//   &.justify-space-evenly {
-//     @include justify-content(space-evenly);
-//   }
-
-//   &.align-center {
-//     @include align-items(center);
-//   }
-
-//   &.gap-5 {
-//     @include gap(5px);
-//   }
-
-//   &.gap-10 {
-//     @include gap(10px);
-//   }
-
-//   &.gap-20 {
-//     @include gap(20px);
-//   }
-
-//   &.gap-90 {
-//     @include gap(90px);
-//   }
-
-//   &.grow-1 {
-//     @include flex-grow(1);
-//   }
-
-//   &.grow-2 {
-//     @include flex-grow(2);
-//   }
-
-//   &.grow-3 {
-//     @include flex-grow(3);
-//   }
-// }
-
+  &.align-center {
+    align-items: center;
+  }
+}
 // Display Utilities
 .show {
   display: block;
