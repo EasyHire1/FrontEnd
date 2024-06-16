@@ -6,44 +6,6 @@ $muted-text-color: #666666; //for small text
 $accent-color: #f0decb; //for accent elements like logo
 $profile-color: #f4f4f4;
 
-$paddings: (
-  small: 2px,
-  medium: 5px,
-  large: 8px,
-  small-t: 2px,
-  small-r: 2px,
-  small-b: 2px,
-  small-l: 2px,
-  medium-t: 5px,
-  medium-r: 5px,
-  medium-b: 5px,
-  medium-l: 5px,
-  large-t: 8px,
-  large-r: 8px,
-  large-b: 8px,
-  large-l: 8px,
-);
-
-// Define margin values with directions
-$margins: (
-  small: 2px,
-  medium: 5px,
-  large: 8px,
-  small-t: 2px,
-  small-r: 2px,
-  small-b: 2px,
-  small-l: 2px,
-  medium-t: 5px,
-  medium-r: 5px,
-  medium-b: 5px,
-  medium-l: 5px,
-  large-t: 8px,
-  large-r: 8px,
-  large-b: 8px,
-  large-l: 8px,
-);
-
-//Breakpoints
 $mobile-breakpoint: 393px;
 $tablet-breakpoint: 640px;
 $narrow-breakpoint: 768px;
@@ -51,23 +13,78 @@ $wide-breakpoint: 1024px;
 $desktop-breakpoint: 1280px;
 $full-breakpoint: 1536px;
 
-// Functions to access padding and margin values
-@function get-padding($size, $direction: null) {
-  @if $direction {
-    @return map-get($paddings, #{$size}-#{$direction});
+
+
+$paddings: (
+  small: 2px,
+  medium: 5px,
+  large: 20px,
+  small-t: 2px,
+  small-r: 2px,
+  small-b: 2px,
+  small-l: 2px,
+  medium-t: 5px,
+  medium-r: 5px,
+  medium-b: 5px,
+  medium-l: 5px,
+  large-t: 20px,
+  large-r: 20px,
+  large-b: 20px,
+  large-l: 20px,
+);
+
+$margins: (
+  small: 2px,
+  medium: 5px,
+  large: 20px,
+  small-t: 2px,
+  small-r: 2px,
+  small-b: 2px,
+  small-l: 2px,
+  medium-t: 5px,
+  medium-r: 5px,
+  medium-b: 5px,
+  medium-l: 5px,
+  large-t: 20px,
+  large-r: 20px,
+  large-b: 20px,
+  large-l: 20px,
+);
+
+$gaps: (
+  small: 2px,
+  medium: 5px,
+  large: 20px,
+  small-t: 2px,
+  small-r: 2px,
+  small-b: 2px,
+  small-l: 2px,
+  medium-t: 5px,
+  medium-r: 5px,
+  medium-b: 5px,
+  medium-l: 5px,
+  large-t: 20px,
+  large-r: 20px,
+  large-b: 20px,
+  large-l: 20px,
+);
+
+
+// Generate utility classes for paddings, margins, gaps
+@each $size, $value in $paddings {
+  .padding-#{$size} {
+    padding: $value;
   }
-  @return map-get($paddings, $size);
 }
 
-@function get-margin($size, $direction: null) {
-  @if $direction {
-    @return map-get($margins, #{$size}-#{$direction});
+@each $size, $value in $margins {
+  .margin-#{$size} {
+    margin: $value;
   }
-  @return map-get($margins, $size);
 }
 
-// Example usage:
-//   .some-class {
-//     padding: get-padding(small, t) get-padding(small, r) get-padding(medium, b) get-padding(small, l);
-//     margin: get-margin(medium, t) get-margin(medium, r) get-margin(small, b) get-margin(medium, l);
-//   }
+@each $size, $value in $gaps {
+  .gap-#{$size} {
+    gap: $value;
+  }
+}

@@ -4,3 +4,29 @@
 }
 
 
+@font-face {
+	font-family: '__firaSans_409cf1';
+	src: url('/../fonts/fira-sans/FiraSans-Light.ttf') format('woff2'), /* Adjust the path and filename */
+		 url('/../fonts/fira-sans/FiraSans-Light.ttf') format('woff'); /* Adjust the path and filename */
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+//   @font-face {
+// 	font-family: '__firaSans_Fallback_409cf1';
+// 	src: url('/path/to/your/fonts/fira-sans-fallback.woff2') format('woff2'), /* Adjust the path and filename */
+// 		 url('/path/to/your/fonts/fira-sans-fallback.woff') format('woff'); /* Adjust the path and filename */
+// 	font-weight: normal;
+// 	font-style: normal;
+//   }
+
+//   /* Monospace font stack */
+// @font-face {
+// 	font-family: 'SFMono-Regular';
+// 	src: url('/path/to/your/fonts/sf-mono.woff2') format('woff2'), /* Adjust the path and filename */
+// 		 url('/path/to/your/fonts/sf-mono.woff') format('woff'); /* Adjust the path and filename */
+// 	font-weight: normal;
+// 	font-style: normal;
+//   }
+  
+  

@@ -1,0 +1,20 @@
+.landing-page {
+    height: 100vh;
+    .content-container {
+      margin-top: 10%;
+    }
+    .input-section{
+      width: 500px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .content-container {
+      padding: 10px !important;
+      .input-section {
+        gap: 10px !important;
+        flex-direction: column;
+      }
+  }
+}

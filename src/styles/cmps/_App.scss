@@ -1,11 +1,38 @@
+:root {
+  --chakra-fonts-heading: '__firaSans_409cf1', '__firaSans_Fallback_409cf1';
+  --chakra-fonts-body: '__firaSans_409cf1', '__firaSans_Fallback_409cf1';
+  --chakra-fonts-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Geneva,
-    Verdana, sans-serif;
+  font-family: 'fira-sans', sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .app-container {
