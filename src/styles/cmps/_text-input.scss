@@ -1,0 +1,55 @@
+.input-container {
+  position: relative;
+  flex: 2;
+  height: 40px;
+
+  input {
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+    transition: border-color 0.3s, padding-top 0.3s;
+
+    &:focus {
+      border-color: #96aed5;
+    }
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      top: -20px;
+      font-size: 14px;
+      color: #96aed5;
+    }
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      padding-top: 0;
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background: white;
+    padding: 0 5px;
+    color: #666;
+    font-size: 18px;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+
+  .filled + label {
+    top: -20px;
+    font-size: 14px;
+    color: #96aed5;
+  }
+}
+
+.btn.main-btn {
+  flex: 1;
+  height: 40px;
+}
